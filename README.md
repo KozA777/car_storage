@@ -1,27 +1,65 @@
-# CarStorage
+# Car Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+## Overview
 
-## Development server
+The **Car Management System** is an Angular-based web application that allows users to store and manage information about cars and their services in the browser's localStorage. Users can add cars to the system and record detailed information about each car's services, including parts and costs. The application provides an intuitive interface for viewing, updating, and deleting cars and their associated service details.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Add Cars**: Users can add cars to the system with details like name, model, and registration.
+- **Store Service Information**: For each car, users can add services, including part names and costs, which are displayed in the car's details view.
+- **View Cars**: All cars stored in the system are listed with their details and the option to view, edit, or delete them.
+- **LocalStorage Persistence**: All car and service data is stored in the browser’s localStorage, ensuring persistence between sessions.
+- **Delete Car**: Users can delete a car and all its associated service records with a confirmation dialog.
+- **CSV Export**: Users can export the list of cars, including their service details, to a CSV file.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Before running the application, ensure you have the following installed:
 
-## Running unit tests
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Steps
 
-## Running end-to-end tests
+1. Clone the repository:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```
+   git clone https://github.com/your-username/car-management-system.git
+   cd car-management-system
+   ```
+2. Install the dependencies:
+```
+npm install
+```
+3. Run the application:
+```
+ng serve
+```
+4. Open the app in your browser:
 
-## Further help
+```
+http://localhost:4200
+```
+## Usage
+- Add a Car: Click on the "Add Car" button, enter the car's name, model, and registration, and save the car.
+- View Car List: The car list shows all added cars. Click on a car to view its details and services.
+- Add Service: In the car details view, add services by specifying the part and cost, which will be displayed in the list.
+- Delete Car: Use the delete button to remove a car. A confirmation dialog will ask for verification before deletion.
+- CSV Export: Click the export button to download the list of cars and their services as a CSV file.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Technologies Used
+- Angular: Frontend framework for building the application.
+- TypeScript: Primary language used for development.
+- LocalStorage: Used to persist car and service data across sessions.
+  
+## Future Enhancements
+- Edit Service Information: Allow users to edit existing service records for each car.
+- Search Functionality: Implement a search feature to filter cars by name or model.
+- Responsive Design: Optimize the application for mobile devices.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
